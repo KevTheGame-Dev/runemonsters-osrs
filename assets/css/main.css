@@ -126,7 +126,8 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #585858;
+		/* color: #585858; */
+		color: #dbdbdb;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -2362,6 +2363,76 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image.overlay {
+			display: flex;
+			position: relative;
+			margin: 0;
+			width: 100%;
+		}
+		.image.overlay.top {
+			margin-top: 1em;
+		}
+		.image.overlay.bottom {
+			margin-bottom: 3em;
+		}
+
+			.image.overlay .overlaycontent {
+				display: flex;
+				align-items: center;
+				height: 100%;
+				width: 100%;
+				right: 0;
+				top: 0;
+				position: absolute;
+				z-index: 2;
+			}
+
+			.image.overlay .overlaycontent.top{
+					background-image: linear-gradient(to bottom, rgba(31, 31, 31, 1),  rgba(31, 31, 31, 0.3), rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.8), rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.1));
+			}
+
+			.image.overlay .overlaycontent.middle{
+					background-image: linear-gradient(to bottom, rgba(31, 31, 31, 0.1), rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.8), rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.1));
+			}
+
+			.image.overlay .overlaycontent.bottom{
+					background-image: linear-gradient(to bottom, rgba(31, 31, 31, 0.1), rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.8), rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.3), rgba(31, 31, 31, 1));
+			}
+
+			.image.overlay .overlayinner {
+				width: 100%;
+				max-width: 68em;
+				margin: 0 auto;
+				padding: 2.5em;
+				/* background-image: linear-gradient(to bottom, rgba(31, 31, 31, 0.0), rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.8), rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.0)); */
+			}
+
+			.image.overlay picture {
+				width: 100%;
+				border-radius: 0px;
+			}
+
+			.image.overlay img {
+				width: 100%;
+				border-radius: 0px;
+			}
+
+			.image.overlay p {
+				color: #ffffff;
+			}
+
+			.image.overlay h1 {
+				color: #ffff00;
+				margin: 0;
+			}
+
+			.image.overlay hr {
+				height: 5px;
+				background-color: #585858;
+				margin: 0.5em 0 0.5em 0;
+				border: none;
+			}
+
 		.image.main {
 			display: block;
 			margin: 0 0 3em 0;
@@ -2377,7 +2448,6 @@ input, select, textarea {
 				.image.main {
 					margin: 0 0 2em 0;
 				}
-
 			}
 
 /* Table */
@@ -2875,7 +2945,11 @@ input, select, textarea {
 			font-family: runescape;
 			font-size: 3em;
 			color: #ffff00;
-			margin-top: -0.5em;
+			margin-top: -0.25em;
+		}
+		#header .title h3 {
+			margin: -1em 0 0;
+			font-size: 0.4em;
 		}
 
 		#header nav {
@@ -2967,12 +3041,16 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				padding: 0.5em 0 0.1em 0 ;
+				padding: 1.5em 0 0.1em 0 ;
+			}
+
+			#header .title {
+				font-size: 2em;
 			}
 
 				#header nav {
 					right: 0.5em;
-					top: 0.5em;
+					top: 1.5em;
 				}
 
 					#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
@@ -3224,7 +3302,7 @@ input, select, textarea {
 				margin-top: 5em;
 				list-style: none;
 				font-size: 0.8em;
-				color: rgba(88, 88, 88, 0.5);
+				color: rgba(219, 219, 219, 0.5);
 			}
 
 				#footer > .inner .copyright a {
