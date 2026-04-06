@@ -86,9 +86,9 @@
                       <a href="#mechanics">Mechanics</a>
                       <ul class="alt sublist">
                         <li><a href="#devotion">Devotion</a></li>
-                        <li><a href="#attacktype">Attack & Defense Types</a></li>
-                        <li><a href="#equipment">Player Stats & Equipment</a></li>
+                        <li><a href="#equipment">The Adventurer, Stats, & Equipment</a></li>
                         <li><a href="#monsters">Monsters</a></li>
+                        <li><a href="#attacktype">Attack & Defense Types</a></li>
                         <li><a href="#spells">Spells</a></li>
                         <li><a href="#token">Tokens</a></li>
                       </ul>
@@ -101,11 +101,11 @@
               <div class="col-7 col-10-medium rulebook-contents">
                 <h1>Official Rulebook</h1>
 
-                <h2 id="overview">Overview</h2>
+                <h2 id="overview"><a href="#overview">Overview</a></h2>
                 <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
                 
-                <h2 id="anatomy">Anatomy of a Card</h2>
+                <h2 id="anatomy"><a href="#anatomy">Anatomy of a Card</a></h2>
                 <span class="image main"><img src="images/tempcardanatomy.png" alt="" /></span>
                 <ul>
                   <li><b>Card Name:</b> Surprisingly, the name of the card.</li>
@@ -117,41 +117,71 @@
                   <li><b>Card Id:</b> Unique identifier of the card. As an example: GIEL-EN000101. GIEL is the set identifier, EN the internationalization code, 0001 the card id, and 01 the art id.</li>
                   <li><b>Art Attribution:</b> Credit to whoever made the art.</li>
                   <li><b>Guthix Devotion Cost:</b> Guthix is the god of balance, so he accepts any devotion. This value is the amount of devotion of any type that must be paid to play the card. If the card has no Guthix devotion cost displayed, this means it has the equivalent of a Guthix devotion cost of 0.</li>
-                  <li><b>Secondary Devotion Cost:</b> The other gods are not so accepting, and must be given devotion specifically to them. Any card with a secondary devotion cost must have one devotion paid of that type, per icon displayed here.</li>
+                  <li><b>Secondary Devotion Cost:</b> The other gods are not so accepting, and must be given devotion specifically to them. Any card with a secondary devotion cost must have one devotion paid of that type per icon displayed here.</li>
                   <li><b>Attack Value & Type:</b> The amount of attack the card has, and its type. See <a href="#mechanics">Mechanics</a> for more details.</li>
                   <li><b>Defense Value & Type:</b> The amount of defense the card has, and its type. See <a href="#mechanics">Mechanics</a> for more details.</li>
                   <li><b>Health Value:</b> The amount of health a card has.</li>
                 </ul>
 
-                <h2 id="board">Board Layout</h2>
+                <h2 id="board"><a href="#board">Board Layout</a></h2>
                 <span class="image main"><img src="images/tempboardlayout.png" alt="" /></span>
                 <ul>
                   <li><b>Deck:</b> Your big, massive deck.</li>
-                  <li><b>Graveyard:</b> Cards that have been played and removed, or discarded or milled. Cannot be played again unless specified otherwise by an effect.</li>
-                  <li><b>Permanent Field:</b> Where played cards generally go. Any monster or other card that remains on the board goes here, and all cards that are only in effect temporarily, such as a spell, go here until they are resolved.</li>
+                  <li><b>Graveyard:</b> Cards that have been played and removed, or discarded or milled. Cards here cannot be played again unless specified otherwise by a card effect.</li>
+                  <li><b>Permanent Field:</b> Where played cards that are not equipment or devotions go. Any monster or other card that remains on the board goes here, and all cards that are only in effect temporarily, such as a spell, go here until they are resolved.</li>
                   <li><b>Equipment:</b> All equipped equipment cards go here. You can only have one equipment of each subtype (Chest Armour, Leg Armour, etc) equipped at a time. The 3 d20s here should be consistently updated to reflect the your overall attack, defense, and HP values. See <a href="#mechanics">Mechanics</a> for more details.</li>
-                  <li><b>Equipment Bank:</b> Equipment cards go here when initially played and then may be equipped the following turn by paying 1 Guthix cost, unless specified otherwise by a card effect. If you already have an equipment of that type equipped already, the two equipments swap with the previously equipped equipment card going back into your equipment bank. If your equipment bank is full when you play an equipment card, you may choose one of the cards in your equipment bank to discard. In case you are a UIM and do not understand what a bank is, it is a place to store things - similar to an inventory. See <a href="#mechanics">Mechanics</a> for more details.</li>
+                  <li><b>Equipment Bank:</b> Equipment cards go here when initially played and then may be equipped the following turn by paying 1 Guthix cost, unless specified otherwise by a card effect. In case you are a UIM and do not understand what a bank is, it is a place to store things - similar to an inventory. See <a href="#mechanics">Mechanics</a> for more details.</li>
                   <li><b>Devotion Field:</b> Where standard devotion cards go, as well as any other cards you have devoted to a god. See <a href="#mechanics">Mechanics</a> for more details.</li>
+                </ul> 
+
+                <h2 id="types"><a href="#types">Types of Cards</a></h2>
+                <ul>
+                  <li>Devotion Cards</li>
+                  <li>Equipment Cards</li>
+                  <li>Monsters</li>
+                  <li>Attack & Defense Types</li>
+                  <li>Spells</li>
+                  <li>Tokens</li>
                 </ul>
 
-                <h2 id="types">Types of Cards</h2>
-                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-                <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-                
-                <h2 id="mechanics">Mechanics</h2>
-                <h3 id="devotion">Devotion</h3>
-                <h3 id="attacktype">Attack & Defense Types</h3>
-                <h3 id="equipment">Player Stats & Equipment</h3>
-                <h3 id="monsters">Monsters</h3>
-                <h3 id="spells">Spells</h3>
-                <h3 id="token">Tokens</h3>
+                <h2 id="mechanics"><a href="#mechanics">Mechanics</a></h2>
+                <h3 id="devotion"><a href="#devotion">Devotion</a></h3>
+                <p>Devotion is how you play your cards - it is this game's mana system. Each card will have a specific god or gods you must pay devotion to in order to play it. The one special case here is Guthix - as the god of balance, Guthix accepts devotion in any form, and as such you can use devotion to a different god towards the Guthix cost of a card.</p>
+                <p>Devotion cards can grant their respective devotion only once each turn. They cost no devotion to play themselves, unless otherwise specified. They are played into the devotion field on your board. In addition, once per turn you can also devote <b>ANY</b> card in your hand to a god. If you do this, you place the card face down in your devotion field and declare what god it will be devoted to. That card then acts as a devotion card to that god, following all the same rules. You cannot cast that card for the rest of the game unless otherwise specified by a card effect.</p>
+                <h3 id="equipment"><a href="#equipment">The Adventurer, Stats, & Equipment</a></h3>
+                <p>Each player starts the game with an Adventurer. The Adventurer's stats start at 1 Attack, 1 Defense, and 20 Health, and if a player's Adventurer falls to 0 health or below, that player loses the game. Once per turn, an Adventurer may attack an opposing monster or player. If the Adventurer successfully kills an opposing monster attacking this way, the Adventurer gains 1 attack.</p>
+                <p>Equipment cards bolster the Adventurer's stats. When played, an equipment card initially goes into the Equipment bank on your board. The following turn or later, you may then pay 1 devotion to Guthix to equip that card to your Adventurer, unless specified otherwise by a card effect. If your Adventurer already has an equipment of that type equipped already, the two equipments swap with the previously equipped equipment card going back into your equipment bank. If your equipment bank is full when you play an equipment card, you may choose one of the cards in your equipment bank to discard.</p>
+                <p>The Adventurer's attack and defense type are dependent on equipped gear (See <a href="#attacktype">Attack & Defense Types</a>), but when no gear is overriding them the Adventurer's attack type is Crush and the defensive type is None.</p>
+                <h3 id="monsters"><a href="#monsters">Monsters</a></h3>
+                <p>Monster cards go onto the Permanent Field when played. Similar to the Adventurer, a monster can only attack or use an active effect once each turn. When a monster is killed or otherwise removed, it goes to the Graveyard unless specified otherwise by a card effect.</p>
+                <p>Monsters, just like the Adventurer, have attack, defense, and health. Each monster has an attack type and defense type. See the next section for details. When a monster is dealt damage in an attack phase or spell cast greater than it's health, it dies and goes to the Graveyard.</p>
+                <h3 id="attacktype"><a href="#attacktype">Attack & Defense Types</a></h3>
+                <p>Attack and defense types provide additional depth to how combat plays out. The types are:</p>
+                <ul>
+                  <li>Crush</li>
+                  <li>Slash</li>
+                  <li>Stab</li>
+                  <li>Air</li>
+                  <li>Water</li>
+                  <li>Earth</li>
+                  <li>Fire</li>
+                  <li>Bolt</li>
+                  <li>Arrow</li>
+                  <li>Dart</li>
+                  <li>None</li>
+                </ul>
+                <p>When a monster or Adventurer attacks, it deals its attack value to the target's defense value first, then the remaning amount is dealt to the target's health. However, if the attacking monster's or Adventurer's attack type matches the defending monster or Adventurer's defense type, the defense value is ignored and the attack damage is dealt directly to the target's health.</p>
+                <p>The special None type means that the attack value is always dealt to the defensive value, regardless of the other type in the interaction.</p>
+                <h3 id="spells"><a href="#spells">Spells</a></h3>
+                <p>Spells are single use cards, often with powerful effects. When a spell is played, it goes onto the Permanent Field until all interactions with the spell resolve, then it immediately goes to the graveyard.</p>
+                <h3 id="token"><a href="#token">Tokens</a></h3>
+                <p>A token is a special type of one of the above cards: Monster Token, Equipment Token, or Spell Token. Token cards are generally created by other cards, and when they would normally go your Graveyard, they are instead removed from the game.</p>
 
-                <h2 id="flow">Flow of a Game</h2>
+                <h2 id="flow"><a href="#flow">Flow of a Game</a></h2>
                 <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
                 
-                
-                <h2 id="keywords">Keywords</h2>
+                <h2 id="keywords"><a href="#keywords">Keywords</a></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
                 <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
               </div>
