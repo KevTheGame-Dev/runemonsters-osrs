@@ -325,6 +325,62 @@ input, select, textarea {
 
 /* Row */
 
+	.rulebook-contents h1 {
+		font-family: runescapeBold;
+		color: #ffff00;
+		margin-bottom: 0;
+	}
+
+	.rulebook-contents h2 {
+		font-family: runescape;
+		color: #ffff00;
+		margin: 0;
+		padding: 1em 0 1em;
+	}
+
+	.rulebook-contents h3 {
+		font-family: runescape;
+		color: #ffff00;
+		margin: 0;
+		padding: 0.5em 0 0.5em;
+	}
+
+	.rulebook-contents a {
+		color: #ffff00;
+	}
+
+	.rulebook-contents a:hover {
+		color: #a8a800 !important;
+	}
+
+	.nav-col {
+		background-color: #303030;
+		border-right: 5px solid #dbdbdb;
+	}
+
+	@media screen and (max-width: 736px) {
+		.rulebook-contents {
+			padding: 0 1.25em 0 2.3em !important;
+		}
+		.nav-col {
+			display: none;
+		}
+	}
+
+	.nav-col .nav-items {
+		margin: 1em 2em;
+		top: 2em;
+		position: sticky;
+	}
+
+	.nav-items li a {
+		color: #dbdbdb;
+	}
+
+	.sublist {
+		margin: 0.5em 0 0 2em;
+	}
+
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -3130,6 +3186,24 @@ input, select, textarea {
 					}
 
 					#menu > .inner > ul > li:first-child {
+						border-top: 0;
+						margin-top: -1em;
+					}
+				
+				#menu > .inner > ul > div > li {
+					padding: 0;
+					border-top: solid 1px rgba(255, 255, 255, 0.15);
+				}
+
+					#menu > .inner > ul > div > li a {
+						display: block;
+						padding: 1em 0;
+						line-height: 1.5;
+						border: 0;
+						color: inherit;
+					}
+
+					#menu > .inner > ul > div > li:first-child {
 						border-top: 0;
 						margin-top: -1em;
 					}
