@@ -345,6 +345,13 @@ input, select, textarea {
 		padding: 0.5em 0 0.5em;
 	}
 
+	.rulebook-contents h4 {
+		font-family: runescape;
+		color: #ffff00;
+		margin: 0;
+		padding: 0.5em 0 0.5em;
+	}
+
 	.rulebook-contents a {
 		color: #ffff00;
 	}
@@ -2525,8 +2532,16 @@ input, select, textarea {
 			border-right: 0;
 		}
 
+			table tbody tr:hover {
+				background-color: rgba(244, 244, 244, 0.2);
+			}
+
 			table tbody tr:nth-child(2n + 1) {
 				background-color: rgba(144, 144, 144, 0.075);
+			}
+
+			table tbody tr:hover:nth-child(2n + 1) {
+				background-color: rgba(244, 244, 244, 0.2);
 			}
 
 		table td {
@@ -2538,6 +2553,14 @@ input, select, textarea {
 			font-weight: 900;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
+		}
+
+		.justify-rightmost th:last-child {
+			text-align: end;
+		}
+
+		.justify-rightmost td:last-child {
+			text-align: end;
 		}
 
 		table thead {

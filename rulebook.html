@@ -54,20 +54,36 @@
                 <li><a href="#">Overview</a></li>
                 <li><a href="#anatomy">Anatomy of a Card</a></li>
                 <li><a href="#board">Board Layout</a></li>
-                <li><a href="#types">Types of Cards</a></li>
+                <li>
+                  <a href="#types">Types of Cards</a>
+                  <ul class="alt sublist">
+                    <li><a href="#primaryTypes">Primary Types</a></li>
+                    <li><a href="#secondaryTypes">Secondary Types</a></li>
+                    <li><a href="#legendaryTypes">Legendary SuperType</a></li>
+                  </ul>
+                </li>
                 <li>
                   <a href="#mechanics">Mechanics</a>
                   <ul class="alt sublist">
                     <li><a href="#devotion">Devotion</a></li>
-                    <li><a href="#attacktype">Attack & Defense Types</a></li>
-                    <li><a href="#equipment">Player Stats & Equipment</a></li>
+                    <li><a href="#equipment">The Adventurer & Equipment</a></li>
                     <li><a href="#monsters">Monsters</a></li>
+                    <li><a href="#attacktype">Attack & Defense Types</a></li>
                     <li><a href="#spells">Spells</a></li>
                     <li><a href="#token">Tokens</a></li>
                   </ul>
                 </li>
-                <li><a href="#flow">Flow of a Game</a></li>
+                <li>
+                  <a href="#flow">Flow of a Game</a>
+                  <ul class="alt sublist">
+                    <li><a href="#pregame">Pre-Game</a></li>
+                    <li><a href="#gameStart">Game Start</a></li>
+                    <li><a href="#turnSteps">Turn Steps</a></li>
+                    <li><a href="#endingGame">Ending the Game</a></li>
+                  </ul>
+                </li>
                 <li><a href="#keywords">Keywords</a></li>
+                <li><a href="#glossary">Glossary</a></li>
               </div>
 						</ul>
 					</nav>
@@ -81,31 +97,47 @@
                     <li><a href="#">Overview</a></li>
                     <li><a href="#anatomy">Anatomy of a Card</a></li>
                     <li><a href="#board">Board Layout</a></li>
-                    <li><a href="#types">Types of Cards</a></li>
+                    <li>
+                      <a href="#types">Types of Cards</a>
+                      <ul class="alt sublist">
+                        <li><a href="#primaryTypes">Primary Types</a></li>
+                        <li><a href="#secondaryTypes">Secondary Types</a></li>
+                        <li><a href="#legendaryTypes">Legendary SuperType</a></li>
+                      </ul>
+                    </li>
                     <li>
                       <a href="#mechanics">Mechanics</a>
                       <ul class="alt sublist">
                         <li><a href="#devotion">Devotion</a></li>
-                        <li><a href="#equipment">The Adventurer, Stats, & Equipment</a></li>
+                        <li><a href="#equipment">The Adventurer & Equipment</a></li>
                         <li><a href="#monsters">Monsters</a></li>
                         <li><a href="#attacktype">Attack & Defense Types</a></li>
                         <li><a href="#spells">Spells</a></li>
                         <li><a href="#token">Tokens</a></li>
                       </ul>
                     </li>
-                    <li><a href="#flow">Flow of a Game</a></li>
+                    <li>
+                      <a href="#flow">Flow of a Game</a>
+                      <ul class="alt sublist">
+                        <li><a href="#pregame">Pre-Game</a></li>
+                        <li><a href="#gameStart">Game Start</a></li>
+                        <li><a href="#turnSteps">Turn Steps</a></li>
+                        <li><a href="#endingGame">Ending the Game</a></li>
+                      </ul>
+                    </li>
                     <li><a href="#keywords">Keywords</a></li>
+                    <li><a href="#glossary">Glossary</a></li>
                   </ul>	
                 </div>
               </div>
-              <div class="col-7 col-10-medium rulebook-contents">
+              <div class="col-8 col-10-medium rulebook-contents">
                 <h1>Official Rulebook</h1>
 
                 <h2 id="overview"><a href="#overview">Overview</a></h2>
-                <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
+                <p>This page is the official rulebook of RuneMonsters. If you are looking for in-depth descriptions on the structure of the game, a specific mechanic, or want to look up a Keyword - you're in the right place. If you are looking for a beginner's guide on how to play, you may want to look at the <a href="howToPlay.html">How To Play</a> page instead.</p>
+                <p>If you feel a specific keyword, mechanic, or other piece of the game is not described here or not adequately described here, please either reach out on Discord or submit a Github issue.</p>
                 
-                <h2 id="anatomy"><a href="#anatomy">Anatomy of a Card</a></h2>
+                <h1 id="anatomy"><a href="#anatomy">Anatomy of a Card</a></h1>
                 <span class="image main"><img src="images/tempcardanatomy.png" alt="" /></span>
                 <ul>
                   <li><b>Card Name:</b> Surprisingly, the name of the card.</li>
@@ -116,45 +148,59 @@
                   <li><b>Flavor Text:</b> Hopefully something cool or funny.</li>
                   <li><b>Card Id:</b> Unique identifier of the card. As an example: GIEL-EN000101. GIEL is the set identifier, EN the internationalization code, 0001 the card id, and 01 the art id.</li>
                   <li><b>Art Attribution:</b> Credit to whoever made the art.</li>
-                  <li><b>Guthix Devotion Cost:</b> Guthix is the god of balance, so he accepts any devotion. This value is the amount of devotion of any type that must be paid to play the card. If the card has no Guthix devotion cost displayed, this means it has the equivalent of a Guthix devotion cost of 0.</li>
-                  <li><b>Secondary Devotion Cost:</b> The other gods are not so accepting, and must be given devotion specifically to them. Any card with a secondary devotion cost must have one devotion paid of that type per icon displayed here.</li>
+                  <li><b>Guthix Devotion Cost:</b> Guthix is the god of balance, so he accepts any Devotion. This value is the amount of Devotion of any type that must be paid to play the card. If the card has no Guthix Devotion cost displayed, this means it an implicit Guthix Devotion cost of 0.</li>
+                  <li><b>Secondary Devotion Cost:</b> The other gods are not so accepting, and must be given Devotion specifically to them. Any card with a secondary Devotion cost must have one Devotion paid of that type per icon displayed here.</li>
                   <li><b>Attack Value & Type:</b> The amount of attack the card has, and its type. See <a href="#mechanics">Mechanics</a> for more details.</li>
                   <li><b>Defense Value & Type:</b> The amount of defense the card has, and its type. See <a href="#mechanics">Mechanics</a> for more details.</li>
                   <li><b>Health Value:</b> The amount of health a card has.</li>
                 </ul>
 
-                <h2 id="board"><a href="#board">Board Layout</a></h2>
+                <h1 id="board"><a href="#board">Board Layout</a></h1>
                 <span class="image main"><img src="images/tempboardlayout.png" alt="" /></span>
                 <ul>
                   <li><b>Deck:</b> Your big, massive deck.</li>
-                  <li><b>Graveyard:</b> Cards that have been played and removed, or discarded or milled. Cards here cannot be played again unless specified otherwise by a card effect.</li>
+                  <li><b>Death's Domain:</b> Cards that have been played and removed, or discarded or milled. Cards here cannot be played again unless specified otherwise by a card effect.</li>
                   <li><b>Permanent Field:</b> Where played cards that are not equipment or devotions go. Any monster or other card that remains on the board goes here, and all cards that are only in effect temporarily, such as a spell, go here until they are resolved.</li>
-                  <li><b>Equipment:</b> All equipped equipment cards go here. You can only have one equipment of each subtype (Chest Armour, Leg Armour, etc) equipped at a time. The 3 d20s here should be consistently updated to reflect the your overall attack, defense, and HP values. See <a href="#mechanics">Mechanics</a> for more details.</li>
+                  <li><b>Equipment Field:</b> All equipped equipment cards go here. You can only have one equipment of each subtype (Chest Armour, Leg Armour, etc) equipped at a time. The 3 d20s here should be consistently updated to reflect the your overall attack, defense, and HP values. See <a href="#mechanics">Mechanics</a> for more details.</li>
                   <li><b>Equipment Bank:</b> Equipment cards go here when initially played and then may be equipped the following turn by paying 1 Guthix cost, unless specified otherwise by a card effect. In case you are a UIM and do not understand what a bank is, it is a place to store things - similar to an inventory. See <a href="#mechanics">Mechanics</a> for more details.</li>
-                  <li><b>Devotion Field:</b> Where standard devotion cards go, as well as any other cards you have devoted to a god. See <a href="#mechanics">Mechanics</a> for more details.</li>
+                  <li><b>Devotion Field:</b> Where standard Devotion cards go, as well as any other cards you have devoted to a god. See <a href="#mechanics">Mechanics</a> for more details.</li>
                 </ul> 
 
-                <h2 id="types"><a href="#types">Types of Cards</a></h2>
+                <h1 id="types"><a href="#types">Types of Cards</a></h1>
+                <p>There are two categories of card types, the Primary card types and the Secondary card types. Primary card types determine how a card is played and generally what rules apply to it. Secondary card types are simply labels and have no direct rules apply to them - instead, card effects are what interact with these. Lastly, a card will only ever have one Primary card type but can have many Secondary card types.</p>
+                <h3 id="primaryTypes"><a href="#primaryTypes">Primary Types</a></h3>
+                <span>The Primary card types are as follows:</span>
                 <ul>
                   <li>Devotion Cards</li>
                   <li>Equipment Cards</li>
-                  <li>Monsters</li>
-                  <li>Attack & Defense Types</li>
-                  <li>Spells</li>
-                  <li>Tokens</li>
+                  <li>Monster Cards</li>
+                  <li>Spell Cards</li>
+                  <li>
+                    Token Cards
+                    <ul>
+                      <li>Monster Token</li>
+                      <li>Equipment Token</li>
+                      <li>Spell Token</li>
+                    </ul>
+                  </li>
                 </ul>
+                <h3 id="secondaryTypes"><a href="#secondaryTypes">Secondary Types</a></h3>
+                <p>There are far too many Secondary card types to list out here. See the <a href="cards.html">Card Browser</a> to view all the various types.</p>
+                <h3 id="legendaryTypes"><a href="#legendaryTypes">Legendary SuperType</a></h3>
+                <p>A card's Primary type may have the prefix of 'Legendary'. This generally notes that it's a powerful card. You may only have 1 copy of each Legendary card in your deck.</p>
 
-                <h2 id="mechanics"><a href="#mechanics">Mechanics</a></h2>
+                <h1 id="mechanics"><a href="#mechanics">Mechanics</a></1>
                 <h3 id="devotion"><a href="#devotion">Devotion</a></h3>
-                <p>Devotion is how you play your cards - it is this game's mana system. Each card will have a specific god or gods you must pay devotion to in order to play it. The one special case here is Guthix - as the god of balance, Guthix accepts devotion in any form, and as such you can use devotion to a different god towards the Guthix cost of a card.</p>
-                <p>Devotion cards can grant their respective devotion only once each turn. They cost no devotion to play themselves, unless otherwise specified. They are played into the devotion field on your board. In addition, once per turn you can also devote <b>ANY</b> card in your hand to a god. If you do this, you place the card face down in your devotion field and declare what god it will be devoted to. That card then acts as a devotion card to that god, following all the same rules. You cannot cast that card for the rest of the game unless otherwise specified by a card effect.</p>
-                <h3 id="equipment"><a href="#equipment">The Adventurer, Stats, & Equipment</a></h3>
-                <p>Each player starts the game with an Adventurer. The Adventurer's stats start at 1 Attack, 1 Defense, and 20 Health, and if a player's Adventurer falls to 0 health or below, that player loses the game. Once per turn, an Adventurer may attack an opposing monster or player. If the Adventurer successfully kills an opposing monster attacking this way, the Adventurer gains 1 attack.</p>
-                <p>Equipment cards bolster the Adventurer's stats. When played, an equipment card initially goes into the Equipment bank on your board. The following turn or later, you may then pay 1 devotion to Guthix to equip that card to your Adventurer, unless specified otherwise by a card effect. If your Adventurer already has an equipment of that type equipped already, the two equipments swap with the previously equipped equipment card going back into your equipment bank. If your equipment bank is full when you play an equipment card, you may choose one of the cards in your equipment bank to discard.</p>
+                <p>Devotion is how you play your cards - it is this game's mana system. Each card will have a specific god or gods you must pay Devotion to in order to play it. The one special case here is Guthix - as the god of balance, Guthix accepts Devotion in any form, and as such you can use Devotion to a different god towards the Guthix cost of a card.</p>
+                <p>Devotion cards can grant their respective Devotion only once each turn. They cost no Devotion to play themselves, unless otherwise specified. They are played into the Devotion Field on your board. In addition, once per turn you can also devote <b>ANY</b> card in your hand to a god. If you do this, you place the card face down in your Devotion Field and declare what god it will be devoted to. That card then acts as a Devotion card to that god, following all the same rules. You cannot play that card for the rest of the game unless otherwise specified by a card effect.</p>
+                <h3 id="equipment"><a href="#equipment">The Adventurer & Equipment</a></h3>
+                <p>Each player starts the game with an Adventurer. The Adventurer's stats start at 1 Attack, 1 Defense, and 20 Health, and if a player's Adventurer falls to 0 Health or below, that player loses the game. Once per turn, an Adventurer may attack an opposing monster or player. If the Adventurer successfully kills an opposing monster attacking this way, the Adventurer gains 1 Attack.</p>
+                <p>Equipment cards bolster the Adventurer's stats. When played, an equipment card initially goes into the Equipment Bank on your board. The following turn or later, you may then pay 1 Devotion to Guthix to equip that card to your Adventurer, unless specified otherwise by a card effect. If your Adventurer already has an equipment of that type equipped already, the two equipments swap with the previously equipped equipment card going back into your Equipment Bank. If your Equipment Bank is full when you play an equipment card, you may choose one of the cards in your Equipment Bank to discard.</p>
                 <p>The Adventurer's attack and defense type are dependent on equipped gear (See <a href="#attacktype">Attack & Defense Types</a>), but when no gear is overriding them the Adventurer's attack type is Crush and the defensive type is None.</p>
+                <p>It is important to note that combat involving an Adventurer is different than combat between two Monsters - the Adventurer only deals its attack damage when attacking. This means monsters attacking the Adventurer do not take damage back.</p>
                 <h3 id="monsters"><a href="#monsters">Monsters</a></h3>
-                <p>Monster cards go onto the Permanent Field when played. Similar to the Adventurer, a monster can only attack or use an active effect once each turn. When a monster is killed or otherwise removed, it goes to the Graveyard unless specified otherwise by a card effect.</p>
-                <p>Monsters, just like the Adventurer, have attack, defense, and health. Each monster has an attack type and defense type. See the next section for details. When a monster is dealt damage in an attack phase or spell cast greater than it's health, it dies and goes to the Graveyard.</p>
+                <p>Monster cards go onto the Permanent Field when played. Similar to the Adventurer, a monster can only attack or use an active effect once each turn. When a monster is killed or otherwise removed, it goes to Death's Domain unless specified otherwise by a card effect.</p>
+                <p>Monsters, just like the Adventurer, have attack, defense, and health. Each monster has an attack type and defense type. See the next section for details. When a monster is dealt damage in an attack phase or spell cast greater than it's health, it dies and goes to Death's Domain.</p>
                 <h3 id="attacktype"><a href="#attacktype">Attack & Defense Types</a></h3>
                 <p>Attack and defense types provide additional depth to how combat plays out. The types are:</p>
                 <ul>
@@ -173,17 +219,272 @@
                 <p>When a monster or Adventurer attacks, it deals its attack value to the target's defense value first, then the remaning amount is dealt to the target's health. However, if the attacking monster's or Adventurer's attack type matches the defending monster or Adventurer's defense type, the defense value is ignored and the attack damage is dealt directly to the target's health.</p>
                 <p>The special None type means that the attack value is always dealt to the defensive value, regardless of the other type in the interaction.</p>
                 <h3 id="spells"><a href="#spells">Spells</a></h3>
-                <p>Spells are single use cards, often with powerful effects. When a spell is played, it goes onto the Permanent Field until all interactions with the spell resolve, then it immediately goes to the graveyard.</p>
+                <p>Spells are single use cards, often with powerful effects. When a spell is played, it goes onto the Permanent Field until all interactions with the spell resolve, then it immediately goes to Death's Domain.</p>
                 <h3 id="token"><a href="#token">Tokens</a></h3>
-                <p>A token is a special type of one of the above cards: Monster Token, Equipment Token, or Spell Token. Token cards are generally created by other cards, and when they would normally go your Graveyard, they are instead removed from the game.</p>
+                <p>A token is a special type of one of the above cards: Monster Token, Equipment Token, or Spell Token. Token cards are generally created by other cards, and when they would normally go to Death's Domain, they are instead removed from the game. Players should make sure to have all relevant token cards (or some method of making one) off to the side before playing.</p>
 
-                <h2 id="flow"><a href="#flow">Flow of a Game</a></h2>
-                <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
+                <h1 id="flow"><a href="#flow">Flow of a Game</a></h1>
+                <h3 id="pregame"><a href="#pregame">Pre-Game</a></h3>
+                <p>Each player should have a Deck with 40 cards. You may have up to 4 copies of a non-Devotion card, unless it has the Legendary prefix in which case you are limited to 1 copy. You may have as many Devotion cards as you like in your deck, but remember you may also Devote non-Devotion cards.</p>
+                <h3 id="gameStart"><a href="#gameStart">Game Start</a></h3>
+                <p>Each player should set up their board space - notably, the d20s for the Adventurer's Attack value should be 1, Defense value should be 1, and Health value should be 20.</p>
+                <p>Players should decide who is going first in some manner, such as rolling a d20 with highest roll going first.</p>
+                <p>Each player should draw their starting hand of 7 cards. If a player is unhappy with their initial hand, they may mulligan the hand by shuffling their entire deck and redrawing a new 7 cards.</p>
+                <h3 id="turnSteps"><a href="#turnSteps">Turn Steps</a></h3>
+                <span>Each player takes turns in a clockwise rotation until the game ends. Each turn consists of the following steps:</span>
+                <ol>
+                  <li>Draw Phase: The player draws a card, unless it is the very first turn of the game. Card effects that reference the Draw Phase or 'start of turn' activate here.</li>
+                  <li>Play Phase: The player plays cards as they see fit. Note that in the case of a Spell card being played, the target's owning player may respond with one of their own Spell cards out-of-turn. This happens once for each Spell that is played by the player.</li>
+                  <li>
+                    <span>Attack Phase: The player attacks as many targets with their monsters and Adventurer as they see fit. Note that cards with the Rage keyword MUST attack if able during this phase.</span>
+                    <span>The steps of the Attack Phase are:</span>
+                    <ol class="sublist">
+                      <li>Declare attackers and their targets. Cards effects with 'Upon attacking' activate here.</li>
+                      <li>Target player(s) may respond with a Spell card out-of-turn, and the player may respond to that Spell with a Spell of their own. This repeats until one Player no longer wishes to respond.</li>
+                      <li>Combat resolves from left to right on the player's board, with attackers dealing damage to their target and the target dealing damage back (unless the target is an Adventurer). Attackers and targets that take damage to their Health that is greater than their Health die. Adventurers that take damage must decrement their Health counter</li>
+                    </ol>
+                  </li>
+                  <li>Play Phase Two: Same as the first Play Phase</li>
+                  <li>End Phase: If the player has more than 7 cards in their hand at this step, they must discard cards until they have only 7.  Card effects that reference the End Phase or 'end of turn' activate here.</li>
+                </ol>
+                <h3 id="endingGame"><a href="#endingGame">Ending the Game</a></h3>
+                <p>A player is eliminated from the game when their Adventurer falls to or below 0 health, or if they forfeit. The game ends when all but one player have been eliminated.</p>
                 
-                <h2 id="keywords"><a href="#keywords">Keywords</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+
+                <h1 id="keywords"><a href="#keywords">Keywords</a></h1>
+                <p>Generally, a Keyword is a word that gives its card its own effect (See the table below for a list of those). If the Keyword is at the top of the card description alone, this indicates the card has that effect. However, you may also see Keywords referenced in the text of a card effect. In those instances, that card <b>does not</b> have the Keyword's effect inheriently - it is merely interacted with in some manner by that card's effect.</p>
+                <div class="table-wrapper">
+                  <table>
+                    <thead><tr><th style="width: 15%;">Keyword</th><th>Description</th></tr></thead>
+                    <tbody>
+                      <tr>
+                        <td>Guardian</td>
+                        <td>Monsters with the Guardian keyword cannot attack</td>
+                      </tr>
+                      <tr>
+                        <td>Defender</td>
+                        <td>Monsters with the Defender keyword must be attacked before other targets. Spells and Monsters with Leap can bypsass Defenders.</td>
+                      </tr>
+                      <tr>
+                        <td>Agile</td>
+                        <td>Monsters with the Agile keyword may attack in the same turn they enter.</td>
+                      </tr>
+                      <tr>
+                        <td>Leap</td>
+                        <td>Monsters with the Leap keyword can attack past Defenders.</td>
+                      </tr>
+                      <tr>
+                        <td>Clue Step</td>
+                        <td>When a card with the Clue Step keyword enters, the owning player's should increment a Clue Step counter. On its own, this does nothing - however, many cards interact with the value of the Clue Step counter.</td>
+                      </tr>
+                      <tr>
+                        <td>Rage</td>
+                        <td>Monsters with the Rage keyword <b>must</b> attack each turn if able.</td>
+                      </tr>
+                      <tr>
+                        <td>Charge</td>
+                        <td>Monsters with the Charge keyword deal damage dealt beyond a target monster's health to the target's owner.</td>
+                      </tr>
+                      <tr>
+                        <td>Resurrect</td>
+                        <td>Monsters with the Resurrect keyword may be replayed from Death's Domain for the additional indicated cost. You must still pay the original cost of the card as well.</td>
+                      </tr>
+                      <tr>
+                        <td>Blessed</td>
+                        <td>Monsters with the Blessed keyword may be played onto the Permanent Field from your Devotion Field for the indicated additional cost. You must still pay the original cost of the card as well.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h1 id="glossary"><a href="#glossary">Glossary</a></h1>
+                <div class="table-wrapper">
+                  <table class="justify-rightmost">
+                    <thead><tr><th style="width: 15%;">Word</th><th>Description</th><th>Relevant Section</th></tr></thead>
+                    <tbody>
+                      <tr>
+                        <td>Adventurer</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Attack</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Attack Phase</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Attack Type</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Attack Value</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Bank Slot / Equipment Bank Slot</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Board</td>
+                        <td>The collective sections of cards a particular player controls. Note that if a card references being on a board, this means being in play on the Permanent Field, Devotion Field, Equipped Equipment, or Equipment Bank - NOT in your deck or in your Death's Domain.</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Counter</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Death's Domain</td>
+                        <td>All cards, except tokens, are put into Death's Domain after playing or dying, depending on the type. Cards in Death's Domain cannot be played again unless an effect says otherwise</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Defense</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Defense Type / Defensive Type</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Defense Value</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Devote / Devoting</td>
+                        <td>A non-token monster, spell, or equipment in your hand may be Devoted, meaning it is played face down into your Devotion Field and acts as the declared Devotion type.</td>
+                        <td><a href="#devotion">&#128279;</a></td>
+                      </tr>
+                      <tr>
+                        <td>Devotion</td>
+                        <td>The cost of summoning a card. Multiple types of Devotion may be needed to play a card.</td>
+                        <td><a href="#devotion">&#128279;</a></td>
+                      </tr>
+                      <tr>
+                        <td>Devotion Field</td>
+                        <td>The section of a player's board where Devotion cards and other cards that have been Devoted are played.</td>
+                        <td><a href="#board">&#128279;</a></td>
+                      </tr>
+                      <tr>
+                        <td>Discard</td>
+                        <td>Send a card to Death's Domain</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Effect</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Enters</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Equipment</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Equipment Bank</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Equipment Field</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Field</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Gain</td>
+                        <td>Typically used with cards that create tokens, the word Gain in this context means adding the token card to your hand.</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Guthix</td>
+                        <td>The Runescape god of balance and nature. In this card game, Guthix is the god you can pay any form of <a href="#devotion">Devotion</a> to.</td>
+                        <td><a href="https://oldschool.runescape.wiki/w/Guthix" target="_blank">&#129125;</a></td>
+                      </tr>
+                      <tr>
+                        <td>Health / Health Value</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>In Play</td>
+                        <td>A card is considered in play when it is in the Permanent Field, Devotion Field, Equipped Equipment, or Equipment Bank. Also note a Devoted card is not in play as itself, but rather as a Devotion.</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Keyword</td>
+                        <td>A word with special meaning - essentially shorthand for describing an effect.</td>
+                        <td><a href="#keywords">&#128279;</a></td>
+                      </tr>
+                      <tr>
+                        <td>Mill</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Monster</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Mulligan</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Permanent</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Permanent Field</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Played</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Resolves / Resolved</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Spell</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Token</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
 					</div>
