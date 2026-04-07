@@ -160,7 +160,7 @@
                 <span class="image main"><img src="images/tempboardlayout.png" alt="" /></span>
                 <ul>
                   <li><b>Deck:</b> Your big, massive deck.</li>
-                  <li><b>Death's Domain:</b> Cards that have been played and removed, or discarded or milled. Cards here cannot be played again unless specified otherwise by a card effect.</li>
+                  <li><b>Death's Domain:</b> Cards that have been discarded, or played and then removed or killed. Cards here cannot be played again unless specified otherwise by a card effect.</li>
                   <li><b>Permanent Field:</b> Where played cards that are not equipment or devotions go. Any monster or other card that remains on the board goes here, and all cards that are only in effect temporarily, such as a spell, go here until they are resolved.</li>
                   <li><b>Equipment Field:</b> All equipped equipment cards go here. You can only have one equipment of each subtype (Chest Armour, Leg Armour, etc) equipped at a time. The 3 d20s here should be consistently updated to reflect the your overall attack, defense, and HP values. See <a href="#mechanics">Mechanics</a> for more details.</li>
                   <li><b>Equipment Bank:</b> Equipment cards go here when initially played and then may be equipped the following turn by paying 1 Guthix cost, unless specified otherwise by a card effect. In case you are a UIM and do not understand what a bank is, it is a place to store things - similar to an inventory. See <a href="#mechanics">Mechanics</a> for more details.</li>
@@ -193,15 +193,18 @@
                 <h1 id="mechanics"><a href="#mechanics">Mechanics</a></1>
                 <h3 id="devotion"><a href="#devotion">Devotion</a></h3>
                 <p>Devotion is how you play your cards - it is this game's mana system. Each card will have a specific god or gods you must pay Devotion to in order to play it. The one special case here is Guthix - as the god of balance, Guthix accepts Devotion in any form, and as such you can use Devotion to a different god towards the Guthix cost of a card.</p>
-                <p>Devotion cards can grant their respective Devotion only once each turn. They cost no Devotion to play themselves, unless otherwise specified. They are played into the Devotion Field on your board. In addition, once per turn you can also devote <b>ANY</b> card in your hand to a god. If you do this, you place the card face down in your Devotion Field and declare what god it will be devoted to. That card then acts as a Devotion card to that god, following all the same rules. You cannot play that card for the rest of the game unless otherwise specified by a card effect.</p>
+                <p>Devotion cards can grant their respective Devotion only once each turn. They cost no Devotion to play themselves, unless otherwise specified. They are played into the Devotion Field on your board. In addition, once per turn you can also devote <b>ANY</b> card in your hand to a god. A card may only be devoted to a god it would require Devotion to if playing normally. If you do this, you place the card face down in your Devotion Field and declare what god it will be devoted to. That card then acts as a Devotion card to that god, following all the same rules. You cannot play that card for the rest of the game unless specified otherwise by a card effect.</p>
+                <p>You may only play a Devotion or Devote a non-Devotion card once per turn, unless specified otherwise by a card effect.</p>
                 <h3 id="equipment"><a href="#equipment">The Adventurer & Equipment</a></h3>
                 <p>Each player starts the game with an Adventurer. The Adventurer's stats start at 1 Attack, 1 Defense, and 20 Health, and if a player's Adventurer falls to 0 Health or below, that player loses the game. Once per turn, an Adventurer may attack an opposing monster or player. If the Adventurer successfully kills an opposing monster attacking this way, the Adventurer gains 1 Attack.</p>
-                <p>Equipment cards bolster the Adventurer's stats. When played, an equipment card initially goes into the Equipment Bank on your board. The following turn or later, you may then pay 1 Devotion to Guthix to equip that card to your Adventurer, unless specified otherwise by a card effect. If your Adventurer already has an equipment of that type equipped already, the two equipments swap with the previously equipped equipment card going back into your Equipment Bank. If your Equipment Bank is full when you play an equipment card, you may choose one of the cards in your Equipment Bank to discard.</p>
+                <p>Equipment cards bolster the Adventurer's stats. When played, an equipment card initially goes into the Equipment Bank on your board. The following turn or later, you may then pay 1 Devotion to Guthix to equip that card to your Adventurer, unless specified otherwise by a card effect. The Adventurer can only have one equipment of each subtype equipped at any given time. When equipping an equipment from your Equipment bank, if your Adventurer already has an equipment of that type equipped already the two equipments swap places, with the previously equipped equipment card going back into your Equipment Bank.</p>
+                <p>The Equipment Bank by default can only hold 3 equipment. If your Equipment Bank is full when you play an equipment card, you may choose one of the cards in your Equipment Bank to discard.</p>
+                
                 <p>The Adventurer's attack and defense type are dependent on equipped gear (See <a href="#attacktype">Attack & Defense Types</a>), but when no gear is overriding them the Adventurer's attack type is Crush and the defensive type is None.</p>
                 <p>It is important to note that combat involving an Adventurer is different than combat between two Monsters - the Adventurer only deals its attack damage when attacking. This means monsters attacking the Adventurer do not take damage back.</p>
                 <h3 id="monsters"><a href="#monsters">Monsters</a></h3>
                 <p>Monster cards go onto the Permanent Field when played. Similar to the Adventurer, a monster can only attack or use an active effect once each turn. When a monster is killed or otherwise removed, it goes to Death's Domain unless specified otherwise by a card effect.</p>
-                <p>Monsters, just like the Adventurer, have attack, defense, and health. Each monster has an attack type and defense type. See the next section for details. When a monster is dealt damage in an attack phase or spell cast greater than it's health, it dies and goes to Death's Domain.</p>
+                <p>Monsters, just like the Adventurer, have attack, defense, and health. Each monster has an attack type and defense type. See the next section for details. When a monster is dealt damage in an attack phase or spell cast greater than it's health after factoring in defense, it dies and goes to Death's Domain. If the damage dealt is less than it's Health, the monster is treated as full Health again - there is no persistent damage.</p>
                 <h3 id="attacktype"><a href="#attacktype">Attack & Defense Types</a></h3>
                 <p>Attack and defense types provide additional depth to how combat plays out. The types are:</p>
                 <ul>
@@ -230,7 +233,7 @@
                 <h3 id="gameStart"><a href="#gameStart">Game Start</a></h3>
                 <p>Each player should set up their board space - notably, the d20s for the Adventurer's Attack value should be 1, Defense value should be 1, and Health value should be 20.</p>
                 <p>Players should decide who is going first in some manner, such as rolling a d20 with highest roll going first.</p>
-                <p>Each player should draw their starting hand of 7 cards. If a player is unhappy with their initial hand, they may mulligan the hand by shuffling their entire deck and redrawing a new 7 cards.</p>
+                <p>Each player should draw their starting hand of 7 cards. If a player is unhappy with their initial hand, they may mulligan the hand by shuffling their entire deck and redrawing a new 7 cards. This may be done once, unless otherwise agreed on by all players.</p>
                 <h3 id="turnSteps"><a href="#turnSteps">Turn Steps</a></h3>
                 <span>Each player takes turns in a clockwise rotation until the game ends. Each turn consists of the following steps:</span>
                 <ol>
@@ -276,7 +279,7 @@
                       </tr>
                       <tr>
                         <td>Clue Step</td>
-                        <td>When a card with the Clue Step keyword enters, the owning player's should increment a Clue Step counter. On its own, this does nothing - however, many cards interact with the value of the Clue Step counter.</td>
+                        <td>When a card with the Clue Step keyword enters, the owning player's should increment a Clue Step counter. On its own, this does nothing - however, many cards interact with the value of the Clue Step counter. There are also cards that may increment the Clue Step counter within their effects.</td>
                       </tr>
                       <tr>
                         <td>Rage</td>
@@ -294,6 +297,10 @@
                         <td>Blessed</td>
                         <td>Monsters with the Blessed keyword may be played onto the Permanent Field from your Devotion Field for the indicated additional cost. You must still pay the original cost of the card as well.</td>
                       </tr>
+                      <tr>
+                        <td>Swipe</td>
+                        <td>Monsters with the Swipe keyword deal their attack damage to the monsters to the left and right of a target monster. Only the primary target monster can deal damage back to the attacking monster.</td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -305,63 +312,63 @@
                     <tbody>
                       <tr>
                         <td>Adventurer</td>
-                        <td></td>
-                        <td></td>
+                        <td>The Adventurer is the main character of your board - when they die, you lose the game. There are many special rules about the Adventurer, such as unique Attack, Defense, and Health mechanics.</td>
+                        <td><a href="#equipment">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Attack</td>
-                        <td></td>
-                        <td></td>
+                        <td>On its own, Attack is either shorthand for the Attack Value and Type of an Adventurer or Monster, or it's in reference to the action of attacking being done in an Attack Phase by a Monster or Adventurer.</td>
+                        <td><a href="#attacktype">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Attack Phase</td>
-                        <td></td>
-                        <td></td>
+                        <td>The step in a turn where you are allowed to attack opposing Monsters or Adventurers.</td>
+                        <td><a href="#turnSteps">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Attack Type</td>
-                        <td></td>
-                        <td></td>
+                        <td>The type with which an Adventurer or Monster attacks with. If the Attack Type matches the Defensive Weakness of the target, the target's Defense is bypassed.</td>
+                        <td><a href="#attacktype">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Attack Value</td>
-                        <td></td>
-                        <td></td>
+                        <td>The value an attacking Adventurer or Monster deals to a target's Defense and/or Health.</td>
+                        <td><a href="#anatomy">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Bank Slot / Equipment Bank Slot</td>
-                        <td></td>
-                        <td></td>
+                        <td>The special section equipment is placed when initially played.</td>
+                        <td><a href="#equipment">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Board</td>
-                        <td>The collective sections of cards a particular player controls. Note that if a card references being on a board, this means being in play on the Permanent Field, Devotion Field, Equipped Equipment, or Equipment Bank - NOT in your deck or in your Death's Domain.</td>
-                        <td></td>
+                        <td>The collective sections of cards a particular player controls. Note that if a card references being on a board, this means being in play on the Permanent Field, Devotion Field, Equipped Equipment, or Equipment Bank - NOT in your hand, deck, or in your Death's Domain.</td>
+                        <td><a href="#board">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Counter</td>
-                        <td></td>
+                        <td>Some form of numerical tracker for values not represented on cards. Typically a d20, but something else can be used if wanted or necessary.</td>
                         <td></td>
                       </tr>
                       <tr>
                         <td>Death's Domain</td>
-                        <td>All cards, except tokens, are put into Death's Domain after playing or dying, depending on the type. Cards in Death's Domain cannot be played again unless an effect says otherwise</td>
-                        <td></td>
+                        <td>All cards, except tokens, are put into a player's Death's Domain after playing or dying, depending on the type. Cards in Death's Domain cannot be played again unless an effect says otherwise</td>
+                        <td><a href="#board">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Defense</td>
-                        <td></td>
-                        <td></td>
+                        <td>Shorthand for the Defense Value and Type of an Adventurer or Monster.</td>
+                        <td><a href="#attacktype">&#128279;</a></td>
                       </tr>
                       <tr>
-                        <td>Defense Type / Defensive Type</td>
-                        <td></td>
-                        <td></td>
+                        <td>Defense Type / Defensive Weakness / Defensive Type</td>
+                        <td>The type that an Adventurer or Monster is weak to being attacked with.</td>
+                        <td><a href="#attacktype">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Defense Value</td>
-                        <td></td>
-                        <td></td>
+                        <td>The value a defending Adventurer or Monster reduces an incoming attack by, unless the Attacking Type and Defense Type match.</td>
+                        <td><a href="#attacktype">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Devote / Devoting</td>
@@ -385,33 +392,33 @@
                       </tr>
                       <tr>
                         <td>Effect</td>
-                        <td></td>
-                        <td></td>
+                        <td>The special thing a card can do, separate from the card's Keywords if it has any. Some cards may not have an effect.</td>
+                        <td><a href="#anatomy">&#128279;</a></td>
                       </tr>
                       <tr>
-                        <td>Enters</td>
-                        <td></td>
-                        <td></td>
+                        <td>Enters / Upon Entering</td>
+                        <td>Effects with this phrasing trigger when a card is played after paying its devotion cost. For Monsters, it is when they are placed on the Permanent field. For Equipment, it is when they are placed in the Equipment Bank for the first time. For Devotions, it is when they are placed in the Devotion Field.</td>
+                        <td><a href="#turnSteps">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Equipment</td>
-                        <td></td>
-                        <td></td>
+                        <td>Card type that effects the Attack and Defense types and values of the Adventurer.</td>
+                        <td><a href="#equipment">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Equipment Bank</td>
-                        <td></td>
-                        <td></td>
+                        <td>The area of the board Equipment goes when initially being played.</td>
+                        <td><a href="#board">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Equipment Field</td>
-                        <td></td>
-                        <td></td>
+                        <td>The area of the board Equipment goes when equipped to the Adventurer.</td>
+                        <td><a href="#board">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Field</td>
-                        <td></td>
-                        <td></td>
+                        <td>The generic term for a section of the board.</td>
+                        <td><a href="#board">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Gain</td>
@@ -425,7 +432,7 @@
                       </tr>
                       <tr>
                         <td>Health / Health Value</td>
-                        <td></td>
+                        <td>The total undefended amount of damage a monster can take in a single Attack Phase or Spell cast. In the case of Adventurer's, Health is a persistent number and tracks the amount of damage the Adventurer takes across many Attacks or Spell casts.</td>
                         <td></td>
                       </tr>
                       <tr>
@@ -439,49 +446,44 @@
                         <td><a href="#keywords">&#128279;</a></td>
                       </tr>
                       <tr>
-                        <td>Mill</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
                         <td>Monster</td>
-                        <td></td>
-                        <td></td>
+                        <td>A type of card</td>
+                        <td><a href="#monsters">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Mulligan</td>
-                        <td></td>
-                        <td></td>
+                        <td>A common term that essentially means a second chance. In the case of this game, a mulligan is discarding your entire hand to draw a new one at the start of the game.</td>
+                        <td><a href="#gameStart">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Permanent</td>
-                        <td></td>
+                        <td>A card that remains on the board for longer than a single turn, Spell cast, etc. Monsters, Devotions, and Equipment are all Permanents.</td>
                         <td></td>
                       </tr>
                       <tr>
                         <td>Permanent Field</td>
-                        <td></td>
-                        <td></td>
+                        <td>The section of the board Monsters are placed when played.</td>
+                        <td><a href="#board">&#128279;</a></td>
                       </tr>
                       <tr>
                         <td>Played</td>
-                        <td></td>
+                        <td>A card is Played when its cost is payed and it enters the player's board.</td>
                         <td></td>
                       </tr>
                       <tr>
                         <td>Resolves / Resolved</td>
-                        <td></td>
+                        <td>When all interactions between the cards in play are accounted for.</td>
                         <td></td>
                       </tr>
                       <tr>
                         <td>Spell</td>
-                        <td></td>
+                        <td>A type of card that has an effect upon entering, and then immediately moves to the player's Death's Domain after resolving.</td>
                         <td></td>
                       </tr>
                       <tr>
                         <td>Token</td>
-                        <td></td>
-                        <td></td>
+                        <td>A special type of card that is created by other cards. Token cards are not legal to have in your deck at the start of a game. When a Token card is killed, removed, or discarded, it does not go into the owning player's Death's Domain - it simply ceases to exist in the state of the game.</td>
+                        <td><a href="#primaryTypes">&#128279;</a></td>
                       </tr>
                     </tbody>
                   </table>

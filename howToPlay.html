@@ -51,11 +51,43 @@
 					<div id="main">
 						<div class="inner">
 							<h1>Generic Page</h1>
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div>
+							<p>This page is meant to teach you the basics of how to play RuneMonsters. If you're looking for in-depth details, you may want to look at the <a href="rulebook.html">Official Rulebook</a> page instead. This page is basically a pared down version of it.</p>
+            
+               <h1 id="anatomy"><a href="#anatomy">Anatomy of a Card</a></h1>
+              <span class="image main"><img src="images/tempcardanatomy.png" alt="" /></span>
+
+              <h1 id="board"><a href="#board">Board Layout</a></h1>
+              <span class="image main"><img src="images/tempboardlayout.png" alt="" /></span>
+
+              
+              <h1 id="flow"><a href="#flow">Flow of a Game</a></h1>
+              <h3 id="pregame"><a href="#pregame">Pre-Game</a></h3>
+              <p>Each player should have a Deck with 40 cards. You may have up to 4 copies of a non-Devotion card, unless it has the Legendary prefix in which case you are limited to 1 copy. You may have as many Devotion cards as you like in your deck, but remember you may also Devote non-Devotion cards.</p>
+              <h3 id="gameStart"><a href="#gameStart">Game Start</a></h3>
+              <p>Each player should set up their board space - notably, the d20s for the Adventurer's Attack value should be 1, Defense value should be 1, and Health value should be 20.</p>
+              <p>Players should decide who is going first in some manner, such as rolling a d20 with highest roll going first.</p>
+              <p>Each player should draw their starting hand of 7 cards. If a player is unhappy with their initial hand, they may mulligan the hand by shuffling their entire deck and redrawing a new 7 cards.</p>
+              <h3 id="turnSteps"><a href="#turnSteps">Turn Steps</a></h3>
+              <span>Each player takes turns in a clockwise rotation until the game ends. Each turn consists of the following steps:</span>
+              <ol>
+                <li>Draw Phase: The player draws a card, unless it is the very first turn of the game. Card effects that reference the Draw Phase or 'start of turn' activate here.</li>
+                <li>Play Phase: The player plays cards as they see fit. Note that in the case of a Spell card being played, the target's owning player may respond with one of their own Spell cards out-of-turn. This happens once for each Spell that is played by the player.</li>
+                <li>
+                  <span>Attack Phase: The player attacks as many targets with their monsters and Adventurer as they see fit. Note that cards with the Rage keyword MUST attack if able during this phase.</span>
+                  <span>The steps of the Attack Phase are:</span>
+                  <ol class="sublist">
+                    <li>Declare attackers and their targets. Cards effects with 'Upon attacking' activate here.</li>
+                    <li>Target player(s) may respond with a Spell card out-of-turn, and the player may respond to that Spell with a Spell of their own. This repeats until one Player no longer wishes to respond.</li>
+                    <li>Combat resolves from left to right on the player's board, with attackers dealing damage to their target and the target dealing damage back (unless the target is an Adventurer). Attackers and targets that take damage to their Health that is greater than their Health die. Adventurers that take damage must decrement their Health counter</li>
+                  </ol>
+                </li>
+                <li>Play Phase Two: Same as the first Play Phase</li>
+                <li>End Phase: If the player has more than 7 cards in their hand at this step, they must discard cards until they have only 7.  Card effects that reference the End Phase or 'end of turn' activate here.</li>
+              </ol>
+              <h3 id="endingGame"><a href="#endingGame">Ending the Game</a></h3>
+              <p>A player is eliminated from the game when their Adventurer falls to or below 0 health, or if they forfeit. The game ends when all but one player have been eliminated.</p>
+              
+            </div>
 					</div>
 
 				<!-- Footer -->

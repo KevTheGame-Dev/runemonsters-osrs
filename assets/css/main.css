@@ -368,6 +368,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 		.rulebook-contents {
 			padding: 0 1.25em 0 2.3em !important;
+			width: 100% !important;
 		}
 		.nav-col {
 			display: none;
@@ -399,10 +400,7 @@ input, select, textarea {
 	.toggleButton {
 		display: inline !important;
 		right: 0;
-	}
-
-	.nav-items li:hover {
-		background-color: rgba(148, 148, 148, 0.25);
+		width: auto !important;
 	}
 
 	.sublist {
