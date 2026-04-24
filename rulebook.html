@@ -190,6 +190,16 @@
                 <h3 id="legendaryTypes"><a href="#legendaryTypes">Legendary SuperType</a></h3>
                 <p>A card's Primary type may have the prefix of 'Legendary'. This generally notes that it's a powerful card. You may only have 1 copy of each Legendary card in your deck.</p>
 
+                <h1 id="legalDeck"><a href="#legalDeck">Deck Requirements</a></h1>
+                <span>A deck must meet the following criteria:</span>
+                <ul>
+                  <li>Have at least 40 cards</li>
+                  <li>There may be no more than 4 copies of non-legendary, non-devotion cards</li>
+                  <li>There may only be a single copy of a legendary card</li>
+                  <li>You may have as many Devotion cards as you choose to. However, keep in mind the Devote mechanic.</li>
+                </ul>
+
+
                 <h1 id="mechanics"><a href="#mechanics">Mechanics</a></1>
                 <h3 id="devotion"><a href="#devotion">Devotion</a></h3>
                 <p>Devotion is how you play your cards - it is this game's mana system. Each card will have a specific god or gods you must pay Devotion to in order to play it. The one special case here is Guthix - as the god of balance, Guthix accepts Devotion in any form, and as such you can use Devotion to a different god towards the Guthix cost of a card.</p>
@@ -200,11 +210,13 @@
                 <p>Equipment cards bolster the Adventurer's stats. When played, an equipment card initially goes into the Equipment Bank on your board. The following turn or later, you may then pay 1 Devotion to Guthix to equip that card to your Adventurer, unless specified otherwise by a card effect. The Adventurer can only have one equipment of each subtype equipped at any given time. When equipping an equipment from your Equipment bank, if your Adventurer already has an equipment of that type equipped already the two equipments swap places, with the previously equipped equipment card going back into your Equipment Bank.</p>
                 <p>The Equipment Bank by default can only hold 3 equipment. If your Equipment Bank is full when you play an equipment card, you may choose one of the cards in your Equipment Bank to discard.</p>
                 
-                <p>The Adventurer's attack and defense type are dependent on equipped gear (See <a href="#attacktype">Attack & Defense Types</a>), but when no gear is overriding them the Adventurer's attack type is Crush and the defensive type is None.</p>
+                <p>The Adventurer's attack and defense type are dependent on equipped gear (See <a href="#attacktype">Attack & Defense Types</a>), but when no gear is overriding them the Adventurer's attack type is Crush and the defensive type is None. The greatest sum of equipped equipment's defensive types is the Adventurer's defensive type; if there is a tie the latest equipped of the tied types applies.</p>
                 <p>It is important to note that combat involving an Adventurer is different than combat between two Monsters - the Adventurer only deals its attack damage when attacking. This means monsters attacking the Adventurer do not take damage back.</p>
                 <h3 id="monsters"><a href="#monsters">Monsters</a></h3>
                 <p>Monster cards go onto the Permanent Field when played. Similar to the Adventurer, a monster can only attack or use an active effect once each turn. When a monster is killed or otherwise removed, it goes to Death's Domain unless specified otherwise by a card effect.</p>
                 <p>Monsters, just like the Adventurer, have attack, defense, and health. Each monster has an attack type and defense type. See the next section for details. When a monster is dealt damage in an attack phase or spell cast greater than it's health after factoring in defense, it dies and goes to Death's Domain. If the damage dealt is less than it's Health, the monster is treated as full Health again - there is no persistent damage.</p>
+                <p>When a Monster dies, returned to hand, or otherwise removed from active play, it loses all stat bonuses and its effect(s) no longer influences the game state.</p>
+                <p>Unless otherwise specified by a card effect, a Monster has one Turn Action each turn. This can be used for attacking in the attack phase, or using a non-passive effect which requires tapping.</p>
                 <h3 id="attacktype"><a href="#attacktype">Attack & Defense Types</a></h3>
                 <p>Attack and defense types provide additional depth to how combat plays out. The types are:</p>
                 <ul>
@@ -238,14 +250,14 @@
                 <span>Each player takes turns in a clockwise rotation until the game ends. Each turn consists of the following steps:</span>
                 <ol>
                   <li>Draw Phase: The player draws a card, unless it is the very first turn of the game. Card effects that reference the Draw Phase or 'start of turn' activate here.</li>
-                  <li>Play Phase: The player plays cards as they see fit. Note that in the case of a Spell card being played, the target's owning player may respond with one of their own Spell cards out-of-turn. This happens once for each Spell that is played by the player.</li>
+                  <li>Play Phase: The player plays cards as they see fit. At the start of this phase, all cards on the players board untap unless a card effect specifies otherwise. Note that in the case of a Spell card being played, the target's owning player may respond with one of their own Spell cards out-of-turn. This happens once for each Spell that is played by the player.</li>
                   <li>
                     <span>Attack Phase: The player attacks as many targets with their monsters and Adventurer as they see fit. Note that cards with the Rage keyword MUST attack if able during this phase.</span>
                     <span>The steps of the Attack Phase are:</span>
                     <ol class="sublist">
                       <li>Declare attackers and their targets. Cards effects with 'Upon attacking' activate here.</li>
                       <li>Target player(s) may respond with a Spell card out-of-turn, and the player may respond to that Spell with a Spell of their own. This repeats until one Player no longer wishes to respond.</li>
-                      <li>Combat resolves from left to right on the player's board, with attackers dealing damage to their target and the target dealing damage back (unless the target is an Adventurer). Attackers and targets that take damage to their Health that is greater than their Health die. Adventurers that take damage must decrement their Health counter</li>
+                      <li>Combat resolves from left to right on the attacking player's board (Adventurer attacks last), with attackers dealing damage to their target and the target dealing damage back (unless the target is an Adventurer). Attackers and targets that take damage to their Health that is greater than their Health die. Adventurers that take damage must decrement their Health counter</li>
                     </ol>
                   </li>
                   <li>Play Phase Two: Same as the first Play Phase</li>
@@ -257,6 +269,7 @@
 
                 <h1 id="keywords"><a href="#keywords">Keywords</a></h1>
                 <p>Generally, a Keyword is a word that gives its card its own effect (See the table below for a list of those). If the Keyword is at the top of the card description alone, this indicates the card has that effect. However, you may also see Keywords referenced in the text of a card effect. In those instances, that card <b>does not</b> have the Keyword's effect inheriently - it is merely interacted with in some manner by that card's effect.</p>
+                <p>The descriptons below describe the more common application to Monsters, but Keywords can appear on Equipment cards as well - in these cases your Adventurer gains the effect of that Keyword while the Equipment is equipped.</p>
                 <div class="table-wrapper">
                   <table>
                     <thead><tr><th style="width: 15%;">Keyword</th><th>Description</th></tr></thead>
@@ -300,6 +313,14 @@
                       <tr>
                         <td>Swipe</td>
                         <td>Monsters with the Swipe keyword deal their attack damage to the monsters to the left and right of a target monster. Only the primary target monster can deal damage back to the attacking monster.</td>
+                      </tr>
+                      <tr>
+                        <td>Protection against Melee/Ranged/Magic</td>
+                        <td>Monsters with the Protection keyword are immune to damage against the indicated set of attack types. This often has the trade-off of low or no Defense</td>
+                      </tr>
+                      <tr>
+                        <td>Leech</td>
+                        <td>Damage dealt by a Monster with Leech heal's the owning player's Adventurer.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -481,9 +502,19 @@
                         <td></td>
                       </tr>
                       <tr>
+                        <td>Tap/Tapping</td>
+                        <td>Tapping a card indicates it has used up it's Turn Action and can no longer actively do anything. The passive effects of tapped cards still apply. All cards untap at the start of your turn.</td>
+                        <td><a href="#monsters">&#128279;</a></td>
+                      </tr>
+                      <tr>
                         <td>Token</td>
                         <td>A special type of card that is created by other cards. Token cards are not legal to have in your deck at the start of a game. When a Token card is killed, removed, or discarded, it does not go into the owning player's Death's Domain - it simply ceases to exist in the state of the game.</td>
-                        <td><a href="#primaryTypes">&#128279;</a></td>
+                        <td><a href="#primmonstersaryTypes">&#128279;</a></td>
+                      </tr>
+                      <tr>
+                        <td>Turn Action</td>
+                        <td>Every Monster and Devotion have a single Turn Action each turn. When a card attacks or taps to use an effect, this consumes its Turn Action - meaning it cannot attack or tap again that turn.</td>
+                        <td><a href="#monsters">&#128279;</a></td>
                       </tr>
                     </tbody>
                   </table>
