@@ -207,7 +207,7 @@
                 <p>You may only play a Devotion or Devote a non-Devotion card once per turn, unless specified otherwise by a card effect.</p>
                 <h3 id="equipment"><a href="#equipment">The Adventurer & Equipment</a></h3>
                 <p>Each player starts the game with an Adventurer. The Adventurer's stats start at 1 Attack, 1 Defense, and 20 Health, and if a player's Adventurer falls to 0 Health or below, that player loses the game. Once per turn, an Adventurer may attack an opposing monster or player. If the Adventurer successfully kills an opposing monster attacking this way, the Adventurer gains 1 Attack.</p>
-                <p>Equipment cards bolster the Adventurer's stats. When played, an equipment card initially goes into the Equipment Bank on your board. The following turn or later, you may then pay 1 Devotion to Guthix to equip that card to your Adventurer, unless specified otherwise by a card effect. The Adventurer can only have one equipment of each subtype equipped at any given time. When equipping an equipment from your Equipment bank, if your Adventurer already has an equipment of that type equipped already the two equipments swap places, with the previously equipped equipment card going back into your Equipment Bank.</p>
+                <p>Equipment cards bolster the Adventurer's stats. When played, an equipment card initially goes into the Equipment Bank on your board. The following turn or later, you may then pay 1 Devotion to Guthix to equip that card to your Adventurer, unless specified otherwise by a card effect. The Adventurer can only have one equipment of each subtype equipped at any given time. When equipping an equipment from your Equipment bank, if your Adventurer already has an equipment of that type equipped already the two equipments swap places, with the previously equipped equipment card going back into your Equipment Bank. Equipment HP is not reduced by damage dealt, but rather decremented by 1 the first time it is used in combat each turn, unless specified otherwise by a card effect. Equipment HP is persistent - if you unequip a weapon or piece of armour, it is not considered full health again.</p>
                 <p>The Equipment Bank by default can only hold 3 equipment. If your Equipment Bank is full when you play an equipment card, you may choose one of the cards in your Equipment Bank to discard.</p>
                 
                 <p>The Adventurer's attack and defense type are dependent on equipped gear (See <a href="#attacktype">Attack & Defense Types</a>), but when no gear is overriding them the Adventurer's attack type is Crush and the defensive type is None. The greatest sum of equipped equipment's defensive types is the Adventurer's defensive type; if there is a tie the latest equipped of the tied types applies.</p>
@@ -220,20 +220,15 @@
                 <h3 id="attacktype"><a href="#attacktype">Attack & Defense Types</a></h3>
                 <p>Attack and defense types provide additional depth to how combat plays out. The types are:</p>
                 <ul>
-                  <li>Crush</li>
-                  <li>Slash</li>
-                  <li>Stab</li>
-                  <li>Air</li>
-                  <li>Water</li>
-                  <li>Earth</li>
-                  <li>Fire</li>
-                  <li>Bolt</li>
-                  <li>Arrow</li>
-                  <li>Dart</li>
+                  <li>Melee</li>
+                  <li>Magic</li>
+                  <li>Ranged</li>
                   <li>None</li>
                 </ul>
                 <p>When a monster or Adventurer attacks, it deals its attack value to the target's defense value first, then the remaning amount is dealt to the target's health. However, if the attacking monster's or Adventurer's attack type matches the defending monster or Adventurer's defense type, the defense value is ignored and the attack damage is dealt directly to the target's health.</p>
-                <p>The special None type means that the attack value is always dealt to the defensive value, regardless of the other type in the interaction.</p>
+                <p>The defense value is essentially treated as a second HP pool during a particular combat phase. Non-effective types must first deplete the defense value during that combat in order to deal damage to health.</p>
+                <p>The special None defensive type means that the incoming attack value is always dealt to the defensive value, regardless of the other type in the interaction. The special None offensive type means that the outgoing attack value is always dealth directly to HP, bypassing the defensive type regardless of what it is. The defensive None type takes priority over the offensive None type when the two interact.</p>
+
                 <h3 id="spells"><a href="#spells">Spells</a></h3>
                 <p>Spells are single use cards, often with powerful effects. When a spell is played, it goes onto the Permanent Field until all interactions with the spell resolve, then it immediately goes to Death's Domain.</p>
                 <h3 id="token"><a href="#token">Tokens</a></h3>
@@ -249,7 +244,7 @@
                 <h3 id="turnSteps"><a href="#turnSteps">Turn Steps</a></h3>
                 <span>Each player takes turns in a clockwise rotation until the game ends. Each turn consists of the following steps:</span>
                 <ol>
-                  <li>Draw Phase: The player draws a card, unless it is the very first turn of the game. Card effects that reference the Draw Phase or 'start of turn' activate here.</li>
+                  <li>Draw Phase: The player draws a card, unless it is the very first player's first turn of the game. Card effects that reference the Draw Phase or 'start of turn' activate here.</li>
                   <li>Play Phase: The player plays cards as they see fit. At the start of this phase, all cards on the players board untap unless a card effect specifies otherwise. Note that in the case of a Spell card being played, the target's owning player may respond with one of their own Spell cards out-of-turn. This happens once for each Spell that is played by the player.</li>
                   <li>
                     <span>Attack Phase: The player attacks as many targets with their monsters and Adventurer as they see fit. Note that cards with the Rage keyword MUST attack if able during this phase.</span>
@@ -264,6 +259,7 @@
                   <li>End Phase: If the player has more than 7 cards in their hand at this step, they must discard cards until they have only 7.  Card effects that reference the End Phase or 'end of turn' activate here.</li>
                 </ol>
                 <h3 id="endingGame"><a href="#endingGame">Ending the Game</a></h3>
+                <p>If a player's deck is empty and the player would otherwise draw a card, the player's Adventurer loses 4 HP.</p>
                 <p>A player is eliminated from the game when their Adventurer falls to or below 0 health, or if they forfeit. The game ends when all but one player have been eliminated.</p>
                 
 
@@ -280,7 +276,7 @@
                       </tr>
                       <tr>
                         <td>Defender</td>
-                        <td>Monsters with the Defender keyword must be attacked before other targets. Spells and Monsters with Leap can bypsass Defenders.</td>
+                        <td>Monsters with the Defender keyword must be attacked before other targets. Spells and Monsters with Leap can bypsass Defenders. Attacks can be declared past a defender, but if the defender is still alive when that attack would take place, the attack fizzles.</td>
                       </tr>
                       <tr>
                         <td>Agile</td>
@@ -308,7 +304,7 @@
                       </tr>
                       <tr>
                         <td>Blessed</td>
-                        <td>Monsters with the Blessed keyword may be played onto the Permanent Field from your Devotion Field for the indicated additional cost. You must still pay the original cost of the card as well.</td>
+                        <td>Monsters with the Blessed keyword may be played onto the Permanent Field from your Devotion Field for the indicated additional cost. You must still pay the original cost of the card as well. You cannot tap a devoted card with Blessed to play itself.</td>
                       </tr>
                       <tr>
                         <td>Swipe</td>
@@ -321,6 +317,10 @@
                       <tr>
                         <td>Leech</td>
                         <td>Damage dealt by a Monster with Leech heal's the owning player's Adventurer.</td>
+                      </tr>
+                      <tr>
+                        <td>Poison / Poison counter</td>
+                        <td>Poison counters deal damage equal to the number of counters to the monster / Adventurer they are on the next time they enter combat. Poison damage is applied to <b>both</b> Defense and HP.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -440,6 +440,11 @@
                         <td>Field</td>
                         <td>The generic term for a section of the board.</td>
                         <td><a href="#board">&#128279;</a></td>
+                      </tr>
+                      <tr>
+                        <td>Fizzles</td>
+                        <td>When an attack, spell cast, ect fizzles, this means it does nothing.</td>
+                        <td></td>
                       </tr>
                       <tr>
                         <td>Gain</td>
