@@ -20,7 +20,6 @@
     smallCardSelector.addClass('selected');
     largeCardSelector.removeClass('selected');
     $('.cardContainer').each(function (index, element) {
-      console.log('hello')
       $(this).css('width', 'calc(16.66666% - 2.5em)');
     });
 	});

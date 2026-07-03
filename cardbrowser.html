@@ -57,71 +57,19 @@
 					<div id="main">
 						<div class="inner">
 							<header>
-								<h1>This is Phantom, a free, fully responsive site<br />
-								template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
-								<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
+								<h1>Card Browser</h1>
 							</header>
-							<section>
-								<button id="largeCardScale" class="cardScaleButton selected"></button>
-								<button id="smallCardScale" class="cardScaleButton"></button>
+							<section class="row">
+								<div class="col-10 col-10-medium">
+									<input type="text" name="card-search" id="card-search" value="" placeholder="Enter card name">
+								</div>
+								<div class="col-2 col-2-medium">
+									<button id="largeCardScale" class="cardScaleButton selected"></button>
+									<button id="smallCardScale" class="cardScaleButton"></button>
+								</div>
 							</section>
-							<section class="tiles">
-								<article class="cardContainer">
-									<span class="image cardZoom">
-										<img src="assets/cards/runemonsters_pngs/fronts/Abyssal_leech.png" alt="" />
-									</span>
-								</article>
-								<article class="cardContainer">
-									<span class="image cardZoom">
-										<img src="assets/cards/runemonsters_pngs/fronts/Abyssal_leech.png" alt="" />
-									</span>
-								</article>
-								<article class="cardContainer">
-									<span class="image cardZoom">
-										<img src="assets/cards/runemonsters_pngs/fronts/Abyssal_leech.png" alt="" />
-									</span>
-								</article>
-								<article class="cardContainer">
-									<span class="image cardZoom">
-										<img src="assets/cards/runemonsters_pngs/fronts/Abyssal_leech.png" alt="" />
-									</span>
-								</article>
-								<article class="cardContainer">
-									<span class="image cardZoom">
-										<img src="assets/cards/runemonsters_pngs/fronts/Abyssal_leech.png" alt="" />
-									</span>
-								</article>
-								<article class="cardContainer">
-									<span class="image cardZoom">
-										<img src="assets/cards/runemonsters_pngs/fronts/Abyssal_leech.png" alt="" />
-									</span>
-								</article>
-								<article class="cardContainer">
-									<span class="image cardZoom">
-										<img src="assets/cards/runemonsters_pngs/fronts/Abyssal_leech.png" alt="" />
-									</span>
-								</article>
-								<article class="cardContainer">
-									<span class="image cardZoom">
-										<img src="assets/cards/runemonsters_pngs/fronts/Abyssal_leech.png" alt="" />
-									</span>
-								</article>
-								<article class="cardContainer">
-									<span class="image cardZoom">
-										<img src="assets/cards/runemonsters_pngs/fronts/Abyssal_leech.png" alt="" />
-									</span>
-								</article>
-								<article class="cardContainer">
-									<span class="image cardZoom">
-										<img src="assets/cards/runemonsters_pngs/fronts/Abyssal_leech.png" alt="" />
-									</span>
-								</article>
-								<article class="cardContainer">
-									<span class="image cardZoom">
-										<img src="assets/cards/runemonsters_pngs/fronts/Abyssal_leech.png" alt="" />
-									</span>
-								</article>
-								<article class="cardContainer">
+							<section id="cardbrowser" class="tiles">
+								<article class="cardContainer" cardName="Abyssal Leech">
 									<span class="image cardZoom">
 										<img src="assets/cards/runemonsters_pngs/fronts/Abyssal_leech.png" alt="" />
 									</span>
@@ -178,8 +126,10 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="assets/js/cardbrowser/csvparser.js"></script>
 			<script src="assets/js/cardbrowser/cardZoom.js"></script>
 			<script src="assets/js/cardbrowser/cardSizing.js"></script>
+			<script src="assets/js/cardbrowser/cardSearch.js"></script>
 			<script src="assets/js/main.js"></script>
 	</body>
 </html>

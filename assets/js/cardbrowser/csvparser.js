@@ -1,22 +1,24 @@
 (function($) {
-	$('.toggleButton').each(function (index, element) {
-		var targetId = $(this).attr('targetId');
-		var target = $('#' + targetId);
+	var folder = "assets/cards/runemonsters_pngs/fronts";
 
-		if (target.attr('start') == 'closed') {
-			target.toggle();
-		}
-
-		$(this).on('click', function(event) {
-			target.toggle();
-
-			if ($(this).text() == '▶') {
-				$(this).html('▼');
-			} else {
-				$(this).html('▶');
+	$.ajax({
+			method: 'GET',
+			url : folder,
+			success: function (data) {
+					$(data).find("a").attr("href", function (i, val) {
+							if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+									$("#cardbrowser").append(
+										"<article class='cardContainer' cardName='" + val + "'>\
+												<span class='image cardZoom'>\
+													<img src='"+ folder + val +" alt='' />\
+											</span>\
+										</article>"
+									);
+							} 
+					});
 			}
-			event.stopPropagation();
-		});
-	})
-	
+	});
+	// assets/cards/runemonsters_pngs/fronts/Abyssal_leech.png" alt="" />
+	// 	</span>
+	// </article>
 })(jQuery);
