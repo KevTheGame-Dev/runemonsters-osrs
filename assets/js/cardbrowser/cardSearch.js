@@ -1,29 +1,68 @@
 (function($) {
+  var allCards = $('.cardContainer');
+
   var searchBar = $('#card-search');
-	searchBar.on('input', function(event) {
-    if (searchBar.val() === "") {
-      $('.cardContainer').each(function (index, element) {
+  var cardTypeDropdown = $('#card-type');
+  var cardRarityDropdown = $('#card-rarity');
+
+  function filterCards() {
+    allCards.each(function(index, element) {
+      var isNameMatch = matchesByName(element);
+      var isTypeMatch = matchesByType(element);
+      var isRarityMatch = matchesByRarity(element);
+
+      if (isNameMatch && isTypeMatch && isRarityMatch) {
         $(element).show();
-      });
-      return;
-    }
-    
-    var matchingCards = [];
-    var nonMatchingCards = [];
-    $('.cardContainer').each(function(index, element) {
-      if ($(element).attr("cardname").toLowerCase().indexOf(searchBar.val()) >= 0) {
-        matchingCards.push(element);
       } else {
-        nonMatchingCards.push(element);
+        $(element).hide();
       }
     });
-    
+  }
 
-    $(matchingCards).each(function (index, element) {
-      $(element).show();
-    })
-    $(nonMatchingCards).each(function (index, element) {
-      $(element).hide();
-    })
+  function matchesByName (element) {
+    if (searchBar.val() === "") {
+      return true;
+    }
+
+    if ($(element).attr("cardname").toLowerCase().indexOf(searchBar.val()) >= 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function matchesByType (element) {
+    if (cardTypeDropdown.val() === "") {
+      return true;
+    }
+
+    if ($(element).attr("cardtype") === cardTypeDropdown.val()) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function matchesByRarity (element) {
+    if (cardRarityDropdown.val() === "") {
+      return true;
+    }
+
+    if ($(element).attr("cardrarity") === cardRarityDropdown.val()) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+	searchBar.on('input', function(event) {
+    filterCards();
 	});
+  cardTypeDropdown.on('change', function(event) {
+
+    filterCards();
+  });
+  cardRarityDropdown.on('change', function(event) {
+    filterCards();
+  });
 })(jQuery);

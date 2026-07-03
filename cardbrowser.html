@@ -59,9 +59,32 @@
 							<header>
 								<h1>Card Browser</h1>
 							</header>
-							<section class="row">
-								<div class="col-10 col-10-medium">
+							<section class="row gtr-uniform">
+								<div class="col-10 col-10-medium row">
 									<input type="text" name="card-search" id="card-search" value="" placeholder="Enter card name">
+									
+									<select name="card-type" id="card-type" class="col-4 col-12-small" style="padding: 0;">
+										<option value="">Card Type:&nbsp;&nbsp;&nbsp;Any</option>
+										<option value="Monster">Card Type:&nbsp;&nbsp;&nbsp;Monster</option>
+										<option value="Monster Token">Card Type:&nbsp;&nbsp;&nbsp;Monster Token</option>
+										<option value="Legendary Monster">Card Type:&nbsp;&nbsp;&nbsp;Legendary Monster</option>
+										<option value="Spell">Card Type:&nbsp;&nbsp;&nbsp;Spell</option>
+										<option value="Spell Token">Card Type:&nbsp;&nbsp;&nbsp;Spell Token</option>
+										<option value="Legendary Spell">Card Type:&nbsp;&nbsp;&nbsp;Legendary Spell</option>
+										<option value="Equipment">Card Type:&nbsp;&nbsp;&nbsp;Equipment</option>
+										<option value="Equipment Token">Card Type:&nbsp;&nbsp;&nbsp;Equipment Token</option>
+										<option value="Legendary Equipment">Card Type:&nbsp;&nbsp;&nbsp;Legendary Equipment</option>
+										<option value="Devotion">Card Type:&nbsp;&nbsp;&nbsp;Devotion</option>
+										<option value="Legendary Devotion">Card Type:&nbsp;&nbsp;&nbsp;Legendary Devotion</option>
+									</select>
+									
+									<select name="card-rarity" id="card-rarity" class="col-4 col-12-small">
+										<option value="">Card Rarity:&nbsp;&nbsp;&nbsp;Any</option>
+										<option value="Common">Card Rarity:&nbsp;&nbsp;&nbsp;Common</option>
+										<option value="Uncommon">Card Rarity:&nbsp;&nbsp;&nbsp;Uncommon</option>
+										<option value="Rare">Card Rarity:&nbsp;&nbsp;&nbsp;Rare</option>
+										<option value="MegaRare">Card Rarity:&nbsp;&nbsp;&nbsp;MegaRare</option>
+									</select>
 								</div>
 								<div class="col-2 col-2-medium">
 									<button id="largeCardScale" class="cardScaleButton selected"></button>
@@ -69,7 +92,7 @@
 								</div>
 							</section>
 							<section id="cardbrowser" class="tiles">
-								<article class="cardContainer" cardName="Abyssal Leech">
+								<article class="cardContainer" cardName="Abyssal Leech" cardType="Monster" cardRarity="Uncommon">
 									<span class="image cardZoom">
 										<img src="assets/cards/runemonsters_pngs/fronts/Abyssal_leech.png" alt="" />
 									</span>
