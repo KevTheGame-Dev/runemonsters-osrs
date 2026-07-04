@@ -1,8 +1,10 @@
-(function($) {
+function setupCardZoom () {
   var zoomedInCard = $('#zoomedInCard');
 	$('.cardZoom').each(function (index, element) {
-		$(this).on('click', function(event) {
-      var baseChildImg = $(this).children('img').first();
+    console.log(element)
+		$(element).on('click', function(event) {
+      console.log(element)
+      var baseChildImg = $(element).children('img').first();
       var zoomedChildImg = zoomedInCard.children('img').first();
 
       zoomedChildImg.attr('src', baseChildImg.attr('src'));
@@ -15,4 +17,4 @@
     zoomedInCard.hide();
   });
 	
-})(jQuery);
+}

@@ -1,11 +1,10 @@
 (function($) {
-  var allCards = $('.cardContainer');
-
   var searchBar = $('#card-search');
   var cardTypeDropdown = $('#card-type');
   var cardRarityDropdown = $('#card-rarity');
 
   function filterCards() {
+    var allCards = $('.cardContainer');
     allCards.each(function(index, element) {
       var isNameMatch = matchesByName(element);
       var isTypeMatch = matchesByType(element);
